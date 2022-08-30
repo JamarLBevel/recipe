@@ -1,58 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { Link,Outlet } from "react-router-dom";
+import React from "react";
+import {Navbar,Container,Nav,NavDropdown} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+export default function App() {
+  return(
+    <div>
+    <Navbar bg="light" expand="lg">
+     <Container>
+       <Navbar.Brand href="#home">Jamar Bevel Recipe Search</Navbar.Brand>
+       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+       <Navbar.Collapse id="basic-navbar-nav">
+         <Nav className="me-auto">
+           <Nav.Item>
+           <Nav.Link href="/contact">contact</Nav.Link>
+           </Nav.Item>
+           <Nav.Item>
+            <Nav.Link href="/recipeRandom">Recipes</Nav.Link>
+           </Nav.Item>
+         </Nav>
+       </Navbar.Collapse>
+     </Container>
+   </Navbar>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+     <Outlet/>
+   </div>
   );
 }
-
-export default App;

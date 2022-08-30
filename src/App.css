@@ -14,12 +14,11 @@
 }
 
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  
+  text-align: center;
+ 
+ 
 }
 
 .App-link {
@@ -37,3 +36,38 @@
     transform: translateY(0px);
   }
 }
+h1{
+  font-family:  'Inter', 'variable';
+}
+
+
+.websiteTitle{
+
+position: absolute;
+color: white;
+padding: 2%;
+background-color: #383838;
+border-radius: 15px 50px 30px;
+font-size: large;
+
+}
+.websiteImageMain{
+  z-index: 1;
+ 
+}
+.searchForm{
+
+ width: 50%;
+ height: 40px;
+border-radius: 20px;
+font-size: large;
+text-align: center;
+position: absolute;
+top: 40%;
+bottom: 60%;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+
