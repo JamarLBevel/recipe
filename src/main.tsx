@@ -1,4 +1,4 @@
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {HashRouter,Route,Routes} from 'react-router-dom'
 import App from './App';
 import RecipeDetail from './category'
 import Contact from './contact';
@@ -7,7 +7,7 @@ import Recipe from './recipe';
 export default function Main(){
 
     return(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
         <Routes>
             <Route path="/" element={<App/>}>
             <Route path="recipeDetail" element={<RecipeDetail/>}/>
@@ -16,6 +16,6 @@ export default function Main(){
             <Route path="recipe" element={<Recipe/>}/>
             </Route>
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }

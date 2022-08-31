@@ -2,8 +2,7 @@
   "name": "recipes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/JamarLBevel/recipeSearch.github.io",
-  "build": "react-scripts build && cp build/index.html build/404.html",
+  "homepage": "https://github.com/JamarLBevel/recipeSearch.github.io/src/index.tsx",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.5",
